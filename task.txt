@@ -1,3 +1,6 @@
 1. Count vowels and consonants in a string
 2. Check whether a string is a palindrome
 3. Count the number of words in a sentence
+
+
+1. find longest word in a string
