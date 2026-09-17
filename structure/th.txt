@@ -1,0 +1,22 @@
+Structure : structure is a collection of data items grouped together to represent a single entity.
+structure is a user-defined data type that can contain data of different types.
+structure is define with the keyword struct.
+
+structure of structure :
+
+struct student{
+    int rollno;
+    char name[20];
+    float marks;
+}
+
+struct --> keyword
+student --> structure name / structure tag
+rollno --> variable name / data member 
+name --> variable name / data member
+marks --> variable name / data member
+
+student s1; --> s1 --> (structure variable , object , instance )
+
+object / instance created within main function;
+for accessing data members of structure object / instance , use [.] operator
