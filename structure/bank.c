@@ -105,6 +105,24 @@ void delete(int id)
     }
 }
 
+void update(int id)
+{
+    for(int i=0;i<SIZE;i++)
+    {
+        if(b[i].id == id)
+        {
+
+            printf("Enter updated name :");
+            gets(b[i].name);
+            fflush(stdin);
+            printf("Enter updated balance :");
+            scanf("%d",&b[i].bal);
+            b[i].flag = 1;
+            printf("Account updated successfully...");
+        }
+    }
+}
+
 
 void main()
 {
@@ -116,7 +134,8 @@ void main()
         printf("\n3 - WITHDRAW");
         printf("\n4 - DISPLAY");
         printf("\n5 - DELETE");
-        printf("\n6 - EXIT");
+        printf("\n6 - UPDATE");
+        printf("\n7 - EXIT");
         printf("\nEnter your choice: ");
         scanf("%d",&choice);
 
@@ -135,7 +154,11 @@ void main()
                     scanf("%d",&id);
                     delete(id);
                     break;
-            case 6: x = 1;
+            case 6: printf("Enter your Id for Update :");
+                    scanf("%d",&id);
+                    update(id);
+                    break;
+            case 7: x = 1;
                     break;
         }
 

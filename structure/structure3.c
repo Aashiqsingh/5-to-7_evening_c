@@ -33,3 +33,5 @@ void main()
         printf("%d\t%s\t%s\n",b[i].id,b[i].name,b[i].title);
     }
 }
+
+

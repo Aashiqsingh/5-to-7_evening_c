@@ -41,12 +41,31 @@ void main()
 
 
 
-
-
     for(int i=1;i<=n;i++)
     {
         printf("%c",ch[i]);
     }
 
 
+}
+
+
+void particular(int index)
+{
+    if(c[index].flag == 1)
+    {
+        printf("Name : ",c[index].name);
+    }
+}
+
+int search(int id)
+{
+    for(int i=1;i<SIZE;i++)
+    {
+        if(c[i].id == id)
+        {
+            particular(i);
+            return i;
+        }
+    }
 }
