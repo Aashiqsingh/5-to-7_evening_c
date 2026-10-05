@@ -20,3 +20,12 @@ int main()
 
     printf("\nAfter swapping a = %d and b = %d",a,b);
 }
+
+
+// int *p = &a;
+
+
+// int *p;
+
+
+// *p = &a;
