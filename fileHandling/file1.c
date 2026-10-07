@@ -17,7 +17,9 @@ int main()
         printf("Enter a character :");
         scanf("%c",&ch);
 
-        fputc(ch,fp);
+        // fputc(ch,fp);
+        fputc("k",fp);
+        
 
         
         fclose(fp);
